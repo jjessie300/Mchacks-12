@@ -18,7 +18,4 @@ submit_button.addEventListener("click", () => {
             console.log('Data received:', data);
         })
 
-        .then(error => {
-            console.error('There was an error while fetching: ', error);
-        })
 })
