@@ -15,7 +15,8 @@ submit_button.addEventListener("click", () => {
         })
 
         .then(data => {
-            console.log('Data received:', data);
+            //console.log('Data received:', data);
+            console.log(data.totalSolved);
         })
 
 })
