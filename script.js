@@ -18,5 +18,7 @@ submit_button.addEventListener("click", () => {
             //console.log('Data received:', data);
             console.log(data.totalSolved);
         })
-
+    
+    // redirect to leetcode
+    window.location.href = 'https://leetcode.com/problemset/';
 })
