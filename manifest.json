@@ -26,11 +26,13 @@
                 "https://snapchat.com/*", 
                 "https://tiktok.com/*", 
                 "https://instagram.com/*", 
-                "https://www.facebook.com*",   
+                "https://www.facebook.com/*",   
                 "https://twitter.com/*",      
                 "https://reddit.com/*"
             ], 
-            "js": "content.js"
+            "js": [
+                "script.js"
+            ]
         }
     ]
 }
