@@ -1,0 +1,24 @@
+{
+    "name": "Extension name", 
+    "description": "Unblock distracting websites by solving LeetCode problems", 
+    "manifest_version": 3, 
+    "version": "1.0", 
+
+    "action": {
+        "default_popup" : "index.html"
+    }, 
+    "permissions": [
+        "tabs", 
+        "activeTabs"
+    ], 
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.youtube.com/*", 
+                "https://www.twitch.com/*", 
+                "https://www.facebook.com*", 
+                "https://www.netflix.com/*"
+            ]
+        }
+    ]
+}
