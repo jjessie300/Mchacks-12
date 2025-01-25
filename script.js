@@ -20,5 +20,5 @@ submit_button.addEventListener("click", () => {
         })
     
     // redirect to leetcode
-    window.location.href = 'https://leetcode.com/problemset/';
+    window.open('https://leetcode.com/problemset/', '_blank');
 })
