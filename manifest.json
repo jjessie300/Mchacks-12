@@ -15,10 +15,22 @@
         {
             "matches": [
                 "https://www.youtube.com/*", 
-                "https://www.twitch.com/*", 
-                "https://www.facebook.com*", 
-                "https://www.netflix.com/*"
-            ]
+                "https://www.twitch.com/*",  
+                "https://www.netflix.com/*", 
+                "https://www.disneyplus.com/*", 
+                "https://www.crunchyroll.com/*", 
+                "https://hulu.com/*", 
+                "https://primevideo.com/*", 
+                "https://hbomax.com/*",
+                "https://peacocktv.com/*", 
+                "https://snapchat.com/*", 
+                "https://tiktok.com/*", 
+                "https://instagram.com/*", 
+                "https://www.facebook.com*",   
+                "https://twitter.com/*",      
+                "https://reddit.com/*"
+            ], 
+            "js": "content.js"
         }
     ]
 }
