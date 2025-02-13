@@ -1,38 +1,31 @@
 {
-    "name": "Extension name", 
-    "description": "Unblock distracting websites by solving LeetCode problems", 
+    "name": "OFFICAL", 
+    "description": "testing", 
     "manifest_version": 3, 
-    "version": "1.0", 
+    "version": "1.0.0", 
 
     "action": {
-        "default_popup" : "index.html"
+        "default_popup": "popup.html"
     }, 
-    "permissions": [
+    "permissions": [ 
+        "scripting", 
         "tabs", 
-        "activeTabs"
+        "storage", 
+        "activeTab"
     ], 
+    "host_permissions": [
+       "https://www.youtube.com/*", 
+       "https://www.twitch.tv/*",
+       "https://www.netflix.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js", 
+        "type": "module"
+    }, 
     "content_scripts": [
-        {
-            "matches": [
-                "https://www.youtube.com/*", 
-                "https://www.twitch.com/*",  
-                "https://www.netflix.com/*", 
-                "https://www.disneyplus.com/*", 
-                "https://www.crunchyroll.com/*", 
-                "https://hulu.com/*", 
-                "https://primevideo.com/*", 
-                "https://hbomax.com/*",
-                "https://peacocktv.com/*", 
-                "https://snapchat.com/*", 
-                "https://tiktok.com/*", 
-                "https://instagram.com/*", 
-                "https://www.facebook.com/*",   
-                "https://twitter.com/*",      
-                "https://reddit.com/*"
-            ], 
-            "js": [
-                "script.js"
-            ]
-        }
+    {
+      "matches": ["https://www.youtube.com/*", "https://www.twitch.tv/*", "https://www.netflix.com/*"],
+      "js": ["content.js"]
+    }
     ]
 }
